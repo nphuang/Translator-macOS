@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701C270A2BBACA41007EF5D5 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 701C27092BBACA41007EF5D5 /* HotKey */; };
+		7045CBA72BBA872E002B894F /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045CBA62BBA872E002B894F /* FloatingPanel.swift */; };
+		7045CBA92BBA8BD1002B894F /* ModifierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045CBA82BBA8BD1002B894F /* ModifierExtension.swift */; };
+		7045CBAB2BBA9557002B894F /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045CBAA2BBA9557002B894F /* VisualEffectView.swift */; };
 		70C9E2492BB9B6FD00C0116B /* macTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C9E2482BB9B6FD00C0116B /* macTranslatorApp.swift */; };
 		70C9E24B2BB9B6FD00C0116B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C9E24A2BB9B6FD00C0116B /* ContentView.swift */; };
 		70C9E24D2BB9B6FE00C0116B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C9E24C2BB9B6FE00C0116B /* Assets.xcassets */; };
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7045CBA62BBA872E002B894F /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
+		7045CBA82BBA8BD1002B894F /* ModifierExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierExtension.swift; sourceTree = "<group>"; };
+		7045CBAA2BBA9557002B894F /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		70C9E2452BB9B6FD00C0116B /* macTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C9E2482BB9B6FD00C0116B /* macTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macTranslatorApp.swift; sourceTree = "<group>"; };
 		70C9E24A2BB9B6FD00C0116B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701C270A2BBACA41007EF5D5 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +108,9 @@
 				70C9E24C2BB9B6FE00C0116B /* Assets.xcassets */,
 				70C9E2512BB9B6FE00C0116B /* macTranslator.entitlements */,
 				70C9E24E2BB9B6FE00C0116B /* Preview Content */,
+				7045CBA62BBA872E002B894F /* FloatingPanel.swift */,
+				7045CBA82BBA8BD1002B894F /* ModifierExtension.swift */,
+				7045CBAA2BBA9557002B894F /* VisualEffectView.swift */,
 			);
 			path = macTranslator;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 			dependencies = (
 			);
 			name = macTranslator;
+			packageProductDependencies = (
+				701C27092BBACA41007EF5D5 /* HotKey */,
+			);
 			productName = macTranslator;
 			productReference = 70C9E2452BB9B6FD00C0116B /* macTranslator.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 70C9E23C2BB9B6FD00C0116B;
+			packageReferences = (
+				7045CBAC2BBAC3A8002B894F /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 70C9E2462BB9B6FD00C0116B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7045CBAB2BBA9557002B894F /* VisualEffectView.swift in Sources */,
 				70C9E24B2BB9B6FD00C0116B /* ContentView.swift in Sources */,
 				70C9E2492BB9B6FD00C0116B /* macTranslatorApp.swift in Sources */,
+				7045CBA92BBA8BD1002B894F /* ModifierExtension.swift in Sources */,
+				7045CBA72BBA872E002B894F /* FloatingPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,12 +441,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macTranslator/macTranslator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"macTranslator/Preview Content\"";
+				DEVELOPMENT_TEAM = D3L38ZY8WB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,12 +469,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macTranslator/macTranslator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"macTranslator/Preview Content\"";
+				DEVELOPMENT_TEAM = D3L38ZY8WB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7045CBAC2BBAC3A8002B894F /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		701C27092BBACA41007EF5D5 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7045CBAC2BBAC3A8002B894F /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70C9E23D2BB9B6FD00C0116B /* Project object */;
 }

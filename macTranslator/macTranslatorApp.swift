@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
-
 @main
 struct macTranslatorApp: App {
+    
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Translator", systemImage: "text.magnifyingglass") {
             ContentView()
         }
+        .menuBarExtraStyle(.menu)
+        
     }
 }
+
